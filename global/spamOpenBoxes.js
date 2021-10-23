@@ -14,7 +14,7 @@ async function openBoxes() {
         if (box.includes('Box')) {
             const _box = box.split(' Box')[0];
 
-            const response = await fetch('https://api.blooket.com/api/users/unlockblook', {
+            const response = await fetch('https://api.blooket.com/api/users/unlockblook?name=gimmy74', {
                 method: "PUT",
                 headers: {
                     "referer": "https://www.blooket.com/",
@@ -40,12 +40,12 @@ async function openBoxes() {
             clearInterval(interval)
         };
 
-    }, 1000); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
+    }, 100); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
 };
 
 async function checkTokens() {
     const myToken = localStorage.token.split('JWT ')[1];
-    const response = await fetch('https://api.blooket.com/api/users/tokens?name=' + await getName(myToken))
+    const response = await fetch('https://api.blooket.com/api/users/tokens?name=gimmy74' + (myToken))
     const data = await response.text();
 
     if (data == 0) {
