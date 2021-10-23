@@ -14,7 +14,7 @@ async function openBoxes() {
         if (box.includes('Box')) {
             const _box = box.split(' Box')[0];
 
-            const response = await fetch('https://api.blooket.com/api/users/unlockblook?name=gimmy74', {
+            const response = await fetch('https://api.blooket.com/api/users/unlockblook', {
                 method: "PUT",
                 headers: {
                     "referer": "https://www.blooket.com/",
@@ -45,7 +45,7 @@ async function openBoxes() {
 
 async function checkTokens() {
     const myToken = localStorage.token.split('JWT ')[1];
-    const response = await fetch('https://api.blooket.com/api/users/tokens?name=gimmy74' + (myToken))
+    const response = await fetch('https://api.blooket.com/api/users/tokens?name=' + getName(myToken))
     const data = await response.text();
 
     if (data == 0) {
