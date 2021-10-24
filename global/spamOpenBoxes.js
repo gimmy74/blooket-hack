@@ -46,7 +46,7 @@ console.log({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isN
 
 async function checkTokens() {
     const myToken = localStorage.token.split('JWT ')[1];
-    const response = await fetch('https://api.blooket.com/api/users/tokens?name=' + await getName(myToken))
+    const response = await fetch('https://api.blooket.com/api/users/tokens?name' + await getName(myToken))
     const data = await response.text();
 
     if (data == 0) {
