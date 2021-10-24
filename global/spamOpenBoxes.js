@@ -37,7 +37,7 @@ async function openBoxes() {
             console.log({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook });
             fs.writeFileSync(
                 "./blook.json",
-                JSON.stringify(kissed),
+                JSON.stringify(),
                 (err) => console.log(err)
               )
         } else {
