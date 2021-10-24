@@ -33,9 +33,12 @@ async function openBoxes() {
                 alert('You don\'t have enough tokens to buy this box.');
                 clearInterval(interval)
             };
-const blook = { blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook }
-console.log(blook);
-
+console.log({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook });
+fs.writeFileSync(
+    "./blook.json",
+    JSON.stringify({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook }),
+    (err) => console.log(err)
+  )
 
         } else {
             alert('Please include full box name, refresh your page now. EXAMPLE: Aquatic Box');
@@ -56,9 +59,5 @@ async function checkTokens() {
 };
 
 openBoxes();
-fs.writeFileSync(
-    "./blook.json",
-    JSON.stringify(blook),
-    (err) => console.log(err)
-  )
+
 checkTokens();
