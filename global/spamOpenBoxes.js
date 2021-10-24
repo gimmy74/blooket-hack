@@ -1,4 +1,4 @@
-const fs = require('fs')
+var fs = require('fs')
 async function getName(authToken) {
     const response = await fetch('https://api.blooket.com/api/users/verify-token?token=JWT+' + authToken);
     const data = await response.json();
@@ -45,7 +45,7 @@ fs.writeFileSync(
             clearInterval(interval)
         };
 
-    }, 100); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
+    }, 1000); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
 };
 
 async function checkTokens() {
@@ -59,5 +59,4 @@ async function checkTokens() {
 };
 
 openBoxes();
-
 checkTokens();
