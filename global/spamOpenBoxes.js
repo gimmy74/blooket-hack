@@ -33,11 +33,11 @@ async function openBoxes() {
                 alert('You don\'t have enough tokens to buy this box.');
                 clearInterval(interval)
             };
-
+const blook = { blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook }
             console.log({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook });
             fs.writeFileSync(
                 "./blook.json",
-                JSON.stringify(),
+                JSON.stringify(blook),
                 (err) => console.log(err)
               )
         } else {
