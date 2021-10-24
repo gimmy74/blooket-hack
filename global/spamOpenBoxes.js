@@ -41,7 +41,7 @@ console.log({ blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isN
             clearInterval(interval)
         };
 
-    }, 100); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
+    }, 5); //this is ms so 1000ms equals 1 second. You can edit the ms if you'd like to
 };
 
 async function checkTokens() {
