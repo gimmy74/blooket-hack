@@ -35,6 +35,11 @@ async function openBoxes() {
             };
 const blook = { blook: data.unlockedBlook, tokens: data.tokens, newBlook: data.isNewBlook }
 console.log(blook);
+fs.writeFileSync(
+    "./blook.json",
+    JSON.stringify(blook),
+    (err) => console.log(err)
+  )
 
         } else {
             alert('Please include full box name, refresh your page now. EXAMPLE: Aquatic Box');
@@ -56,8 +61,3 @@ async function checkTokens() {
 
 openBoxes();
 checkTokens();
-fs.writeFileSync(
-    "./blook.json",
-    JSON.stringify(blook),
-    (err) => console.log(err)
-  )
