@@ -49,3 +49,8 @@ I just wanted to say that I'm not responsible if you get banned. I'm not respons
 ![image](https://user-images.githubusercontent.com/73669084/148287287-44fd3b5f-43d9-49be-bf9f-7d445d366bfd.png)
 ![image](https://user-images.githubusercontent.com/73669084/148287302-8693c202-6968-4cf3-811f-05cbd0fd8b2f.png)
 ![image](https://user-images.githubusercontent.com/73669084/148287313-30793b91-b0d1-430b-879b-398a23b9b197.png)
+
+
+## Also
+
+Don't make any useless Pull Request that just up the token count, The api doesn't allow over 500 theres nothing anyone but The creator of blooket can do about that makin g these useless PR's are just taking up the dev's time which stops him from being able to push out updates.
