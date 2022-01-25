@@ -53,4 +53,4 @@ I just wanted to say that I'm not responsible if you get banned. I'm not respons
 
 ## Also
 
-Don't make any useless Pull Request that just up the token count, The api doesn't allow over 500 theres nothing anyone but The creator of blooket can do about that makin g these useless PR's are just taking up the dev's time which stops him from being able to push out updates. Thank you
+Don't make any useless Pull Request that just up the token count, The api doesn't allow over 500 theres nothing anyone but The creator of blooket can do about that making these useless PR's are just taking up the dev's time which stops him from being able to push out updates. Thank you
